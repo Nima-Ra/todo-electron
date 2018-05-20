@@ -2,9 +2,21 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  #add-todo-button {
+    bottom: 2%;
+    right: 2%;
+    position: absolute;
+  }
+  </style>
 </head>
-<body id="body" style="position: relative; height: 100%;">
+<body id="body">
   <nav>
     <div class="nav-wrapper">
       <a class="brand-logo center">Todo List</a>
@@ -12,6 +24,11 @@
   </nav>
   <ul>
   </ul>
+
+  <a class="btn-floating btn-large waves-effect waves-light red" id="add-todo-button" onclick="addWindow()">
+    <i class="material-icons">add</i>
+  </a>
+  
   <script src="js/mainWindow.js"></script>
 </body>
 </html>
