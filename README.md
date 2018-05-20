@@ -2,6 +2,8 @@
 ![alt text](https://github.com/Nima-Ra/todo-electron/blob/master/assets/png/icon.png "Logo")
 
 Simple electron app which can manage your todo list and a good start for understanding electron apps.
+# Take a look!
+![alt text](https://github.com/Nima-Ra/todo-electron/blob/master/assets/gif.gif "functionality")
 
 # Hot keys
 | Hot Key       | Mac OS        |Linux / Windows  |
