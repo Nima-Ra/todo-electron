@@ -1,12 +1,12 @@
 {
   "name": "todo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple todo app with electron js",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "package-win": "electron-packager . Todo App --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Todo app\"",
-    "package-linux": "electron-packager . Todo App --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+    "package-win": "electron-packager . Todo App --overwrite --platform=win32 --arch=ia32 --icon=assets/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Todo app\"",
+    "package-linux": "electron-packager . Todo App --overwrite --platform=linux --arch=x64 --icon=assets/png/icon.png --prune=true --out=release-builds"
   },
   "author": "Nima Ra",
   "license": "MIT",
