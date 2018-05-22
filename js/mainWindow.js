@@ -2,6 +2,7 @@ const electron = require('electron');
 const {ipcRenderer} = electron;
 const ul = document.querySelector('ul');
 const fs = require('fs');
+const {exec} = require("child_process");
 
 Array.prototype.remove = function() {
     var what, a = arguments, L = a.length, ax;
@@ -96,6 +97,12 @@ function add_todo_html(todo){
         ul.appendChild(li);
 }
 
+
+if (fs.existsSync("Todo.txt") == false){
+  exec("touch Todo.txt", (err, stdout, stderr) => {
+    if (err) console.log(err);
+  });
+}
 
 var todo_data = String(fs.readFileSync("Todo.txt")).split(" | ");
 if (todo_data.length > 1){
